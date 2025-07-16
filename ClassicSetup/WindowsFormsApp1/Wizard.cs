@@ -12,7 +12,11 @@ namespace ClassicSetup
     public partial class Wizard : Form
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         private readonly string logFilePath = @"C:\Classic Files\firsttime.log";
+=======
+        private readonly string logFilePath = @"C:\Programy\firsttime.log";
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
 =======
         private readonly string logFilePath = @"C:\Programy\firsttime.log";
 >>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
@@ -27,6 +31,7 @@ namespace ClassicSetup
         private void AddCommandLinkButtons()
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             AddCommandLinkButton(cmdlinkpanel, "Windows 7 Ultimate branding", BrandingButton_Click);
             AddCommandLinkButton(cmdlinkpanel, "Windows 7 Professional branding", BrandingButton_Click);
             AddCommandLinkButton(cmdlinkpanel, "Windows 7 Home Premium branding", BrandingButton_Click);
@@ -40,6 +45,8 @@ namespace ClassicSetup
 
             AddCommandLinkButton(rebootpanel, "Reboot now and finish the post-install stage", RebootButton_Click);
 =======
+=======
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
             AddCommandLinkButton(cmdlinkpanel, "Windows 7 Ultimate", BrandingButton_Click);
             AddCommandLinkButton(cmdlinkpanel, "Windows 7 Professional", BrandingButton_Click);
             AddCommandLinkButton(cmdlinkpanel, "Windows 7 Home Premium", BrandingButton_Click);
@@ -51,6 +58,9 @@ namespace ClassicSetup
             AddCommandLinkButton(bwsrlinkpanel, "Firefox 115", BrowserButton_Click);
 
             AddCommandLinkButton(rebootpanel, "Uruchom ponownie aby dokończyć ostatnie szlify", RebootButton_Click);
+<<<<<<< HEAD
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
+=======
 >>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
             Log("Added buttons");
         }
@@ -72,6 +82,7 @@ namespace ClassicSetup
             switch (button.Text)
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 case "Windows 7 Ultimate branding":
                     ApplyBranding("Ultimate");
                     break;
@@ -87,6 +98,8 @@ namespace ClassicSetup
                 case "Windows 7 Starter branding":
                     ApplyBranding("Starter");
 =======
+=======
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
                 case "Windows 7 Ultimate":
                     ApplyBranding("Ultimate");
                     break;
@@ -98,6 +111,9 @@ namespace ClassicSetup
                     break;
                 case "Windows 7 Enterprise":
                     ApplyBranding("Enterprise");
+<<<<<<< HEAD
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
+=======
 >>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
                     break;
             }
@@ -120,10 +136,13 @@ namespace ClassicSetup
                 Log($"Executed branding.exe for {edition}");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (edition == "Starter")
                 {
                     ApplyStarterWallpaper();
                 }
+=======
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
 =======
 >>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
             }
@@ -144,7 +163,11 @@ namespace ClassicSetup
             try
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 string executablePath = @"C:\Classic Files\Classic Setup\branding.exe";
+=======
+                string executablePath = @"C:\Programy\PostInstall\branding.exe";
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
 =======
                 string executablePath = @"C:\Programy\PostInstall\branding.exe";
 >>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
@@ -204,6 +227,7 @@ namespace ClassicSetup
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         private void ApplyStarterWallpaper()
         {
             string wallpaperPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Branding", "Starter", "wallpaper.jpg");
@@ -215,6 +239,8 @@ namespace ClassicSetup
             }
         }
 
+=======
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
 =======
 >>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
@@ -234,6 +260,7 @@ namespace ClassicSetup
             switch (button.Text)
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 case "Internet Explorer 11 style (BeautyFox)":
                     ApplyIE11Style();
                     break;
@@ -245,6 +272,8 @@ namespace ClassicSetup
                     break;
                 case "Firefox 115 (Unmodified)":
 =======
+=======
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
                 case "Styl Internet Explorer 9 (BeautyFox)":
                     ApplyIE9Style();
                     break;
@@ -255,6 +284,9 @@ namespace ClassicSetup
                     ApplyChrome2012Style();
                     break;
                 case "Firefox 115":
+<<<<<<< HEAD
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
+=======
 >>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
                     ApplyFirefox115Style();
                     break;
@@ -265,7 +297,11 @@ namespace ClassicSetup
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         private void ApplyIE11Style()
+=======
+        private void ApplyIE9Style()
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
 =======
         private void ApplyIE9Style()
 >>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
@@ -275,7 +311,11 @@ namespace ClassicSetup
         }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         private void ApplyFirefox10To13Style()
+=======
+        private void ApplyFirefox14To28Style()
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
 =======
         private void ApplyFirefox14To28Style()
 >>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
@@ -287,7 +327,11 @@ namespace ClassicSetup
         private void ApplyChrome2012Style()
         {
 <<<<<<< HEAD
+<<<<<<< HEAD
             ApplyBrowserStyle("Silverfox");
+=======
+            ApplyBrowserStyle("Geckium");
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
 =======
             ApplyBrowserStyle("Geckium");
 >>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
@@ -404,7 +448,11 @@ namespace ClassicSetup
                     }
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Process.Start("shutdown", "/r /t 0");
+=======
+                Process.Start("shutdown", "/r /f /t 0");
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
 =======
                 Process.Start("shutdown", "/r /f /t 0");
 >>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
@@ -429,7 +477,21 @@ namespace ClassicSetup
                 MessageBox.Show($"Failed to write log: {ex.Message}");
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
         }
+=======
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
 =======
         }
 

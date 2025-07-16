@@ -6,6 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 <<<<<<< HEAD
+<<<<<<< HEAD
 [assembly: AssemblyTitle("WindowsFormsApp1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
@@ -13,12 +14,17 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyProduct("WindowsFormsApp1")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 =======
+=======
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
 [assembly: AssemblyTitle("Konfigurator Relive7")]
 [assembly: AssemblyDescription("Aplikacja która dokończy instalację modyfikacji Relive7.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("The Relive Team")]
 [assembly: AssemblyProduct("Konfigurator Relive7")]
 [assembly: AssemblyCopyright("Copyright © 2024 - The Relive Team")]
+<<<<<<< HEAD
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
+=======
 >>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
