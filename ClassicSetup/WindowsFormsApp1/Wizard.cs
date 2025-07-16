@@ -11,7 +11,11 @@ namespace ClassicSetup
 {
     public partial class Wizard : Form
     {
+<<<<<<< HEAD
         private readonly string logFilePath = @"C:\Classic Files\firsttime.log";
+=======
+        private readonly string logFilePath = @"C:\Programy\firsttime.log";
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
         private bool hasSimulatedWinR = false;
 
         public Wizard()
@@ -22,6 +26,7 @@ namespace ClassicSetup
 
         private void AddCommandLinkButtons()
         {
+<<<<<<< HEAD
             AddCommandLinkButton(cmdlinkpanel, "Windows 7 Ultimate branding", BrandingButton_Click);
             AddCommandLinkButton(cmdlinkpanel, "Windows 7 Professional branding", BrandingButton_Click);
             AddCommandLinkButton(cmdlinkpanel, "Windows 7 Home Premium branding", BrandingButton_Click);
@@ -34,6 +39,19 @@ namespace ClassicSetup
             AddCommandLinkButton(bwsrlinkpanel, "Firefox 115 (Unmodified)", BrowserButton_Click);
 
             AddCommandLinkButton(rebootpanel, "Reboot now and finish the post-install stage", RebootButton_Click);
+=======
+            AddCommandLinkButton(cmdlinkpanel, "Windows 7 Ultimate", BrandingButton_Click);
+            AddCommandLinkButton(cmdlinkpanel, "Windows 7 Professional", BrandingButton_Click);
+            AddCommandLinkButton(cmdlinkpanel, "Windows 7 Home Premium", BrandingButton_Click);
+            AddCommandLinkButton(cmdlinkpanel, "Windows 7 Enterprise", BrandingButton_Click);
+
+            AddCommandLinkButton(bwsrlinkpanel, "Styl Internet Explorer 9 (BeautyFox)", BrowserButton_Click);
+            AddCommandLinkButton(bwsrlinkpanel, "Styl Firefox 14-28 (Echelon)", BrowserButton_Click);
+            AddCommandLinkButton(bwsrlinkpanel, "Styl Chrome 25 (Geckium)", BrowserButton_Click);
+            AddCommandLinkButton(bwsrlinkpanel, "Firefox 115", BrowserButton_Click);
+
+            AddCommandLinkButton(rebootpanel, "Uruchom ponownie aby dokończyć ostatnie szlify", RebootButton_Click);
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
             Log("Added buttons");
         }
 
@@ -53,6 +71,7 @@ namespace ClassicSetup
             var button = (CommandLinkButton)sender;
             switch (button.Text)
             {
+<<<<<<< HEAD
                 case "Windows 7 Ultimate branding":
                     ApplyBranding("Ultimate");
                     break;
@@ -67,6 +86,19 @@ namespace ClassicSetup
                     break;
                 case "Windows 7 Starter branding":
                     ApplyBranding("Starter");
+=======
+                case "Windows 7 Ultimate":
+                    ApplyBranding("Ultimate");
+                    break;
+                case "Windows 7 Professional":
+                    ApplyBranding("Professional");
+                    break;
+                case "Windows 7 Home Premium":
+                    ApplyBranding("Premium");
+                    break;
+                case "Windows 7 Enterprise":
+                    ApplyBranding("Enterprise");
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
                     break;
             }
             welcomeWizard.NextPage();
@@ -87,10 +119,13 @@ namespace ClassicSetup
 
                 Log($"Executed branding.exe for {edition}");
 
+<<<<<<< HEAD
                 if (edition == "Starter")
                 {
                     ApplyStarterWallpaper();
                 }
+=======
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
             }
             catch (UnauthorizedAccessException uex)
             {
@@ -108,7 +143,11 @@ namespace ClassicSetup
         {
             try
             {
+<<<<<<< HEAD
                 string executablePath = @"C:\Classic Files\Classic Setup\branding.exe";
+=======
+                string executablePath = @"C:\Programy\PostInstall\branding.exe";
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
                 string arguments = $"-branding \"{edition}\"";
 
                 var process = new System.Diagnostics.Process();
@@ -164,6 +203,7 @@ namespace ClassicSetup
             }
         }
 
+<<<<<<< HEAD
         private void ApplyStarterWallpaper()
         {
             string wallpaperPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Branding", "Starter", "wallpaper.jpg");
@@ -175,6 +215,8 @@ namespace ClassicSetup
             }
         }
 
+=======
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
         private static extern int SystemParametersInfo(int uAction, int uParam, string lpvParam, int fuWinIni);
         const int SPI_SETDESKWALLPAPER = 0x0014;
@@ -191,6 +233,7 @@ namespace ClassicSetup
             var button = (CommandLinkButton)sender;
             switch (button.Text)
             {
+<<<<<<< HEAD
                 case "Internet Explorer 11 style (BeautyFox)":
                     ApplyIE11Style();
                     break;
@@ -201,6 +244,18 @@ namespace ClassicSetup
                     ApplyChrome2012Style();
                     break;
                 case "Firefox 115 (Unmodified)":
+=======
+                case "Styl Internet Explorer 9 (BeautyFox)":
+                    ApplyIE9Style();
+                    break;
+                case "Styl Firefox 14-28 (Echelon)":
+                    ApplyFirefox14To28Style();
+                    break;
+                case "Styl Chrome 25 (Geckium)":
+                    ApplyChrome2012Style();
+                    break;
+                case "Firefox 115":
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
                     ApplyFirefox115Style();
                     break;
             }
@@ -209,13 +264,21 @@ namespace ClassicSetup
             welcomeWizard.NextPage();
         }
 
+<<<<<<< HEAD
         private void ApplyIE11Style()
+=======
+        private void ApplyIE9Style()
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
         {
             ApplyBrowserStyle("BeautyFox");
             Log("Applied Internet Explorer 11 Style");
         }
 
+<<<<<<< HEAD
         private void ApplyFirefox10To13Style()
+=======
+        private void ApplyFirefox14To28Style()
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
         {
             ApplyBrowserStyle("Echelon");
             Log("Applied Firefox 14 - 28 Style");
@@ -223,7 +286,11 @@ namespace ClassicSetup
 
         private void ApplyChrome2012Style()
         {
+<<<<<<< HEAD
             ApplyBrowserStyle("Silverfox");
+=======
+            ApplyBrowserStyle("Geckium");
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
             Log("Applied Chrome 23 Style");
         }
 
@@ -336,7 +403,11 @@ namespace ClassicSetup
                         key.SetValue("EnableLUA", 1, RegistryValueKind.DWord);
                     }
                 }
+<<<<<<< HEAD
                 Process.Start("shutdown", "/r /t 0");
+=======
+                Process.Start("shutdown", "/r /f /t 0");
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
             }
             catch
             {
@@ -357,6 +428,20 @@ namespace ClassicSetup
             {
                 MessageBox.Show($"Failed to write log: {ex.Message}");
             }
+<<<<<<< HEAD
         }
+=======
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> parent of 1b0dcae (Delete ClassicSetup directory)
     }
 }
