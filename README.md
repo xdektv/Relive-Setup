@@ -6,6 +6,5 @@ Program pozwala zmienić oznakowanie i styl Firefoxa w modyfikacjiach:
 - ReliveVista (wkrótce)
 - ReliveXP (wkrótce)
 
-![obraz](https://github.com/user-attachments/assets/3ac277c2-cefd-4e61-9a00-d41fde5c1345)
-
+![obraz](https://github.com/user-attachments/assets/e681b411-877f-421c-89d2-5c24d522b12a)
 
